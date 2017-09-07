@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/makers/juan' do
-    "<h1>Hola Juan!</h1>"
+get '/makers/params[:nombre]' do
+       "<h1>Hola, #{params['nombre'].capitalize}!</h1>" 
 end
